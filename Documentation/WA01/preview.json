@@ -1,12 +1,17 @@
 {
-  "project_id": "appgprj_6b02d07a71c881919523979f43df3c98",
-  "version_id": "appgprj_6b02d07a71c881919523979f43df3c98~appgver_bd6b4fb4ff30819194c3dbb7a8f64dd6",
-  "deployment_id": "appgdep_6b02d0cb9d708191aefbcbe7313dc456",
-  "status": "succeeded",
-  "url": "https://brg-wa01-ci-vorschau.streifen-chips-00.chatgpt.site",
-  "audience": "owner-only; no groups or external visitors",
-  "source_commit": "34a85c8d69a12d97470a5938ed23ecaae6dd599b",
-  "canonical_repository": "4k5mm85mj2-ship-it/Webseite",
-  "canonical_branch": "work/wa01-ci-integration",
-  "production_github_pages_unchanged": true
+  "provider": "GitHub Pages",
+  "phase": "test",
+  "url": "https://4k5mm85mj2-ship-it.github.io/Webseite/",
+  "repository": "4k5mm85mj2-ship-it/Webseite",
+  "source_branch": "main",
+  "source_directory": "/",
+  "development_branch": "work/wa01-ci-integration",
+  "authorization_date": "2026-11-22",
+  "authorization": "Stell unsere Änderungen immer über GitHub Pages zur Verfügung. Das ist ja unsere Testzeit.",
+  "requires_login": false,
+  "final_acceptance": "pending; real VoiceOver test remains open",
+  "previous_private_copy": {
+    "project_id": "appgprj_6b02d07a71c881919523979f43df3c98",
+    "status": "not used as acceptance URL"
+  }
 }

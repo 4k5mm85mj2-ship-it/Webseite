@@ -24,7 +24,7 @@ Es werden Systemschriften verwendet. Keine extern geladenen Bibliotheken, Schrif
 
 ## GitHub Pages
 
-Der Nutzer hat am 22.11.2026 die Veröffentlichung des Entwurfs zum Testen ausdrücklich beauftragt. Die vorhandene Konfiguration verwendet `main` und `/ (root)`; HTTPS ist aktiviert. Die HTML-Dateien und Assets liegen deshalb unmittelbar in der Repositorywurzel. `.nojekyll` hält die Auslieferung statisch.
+Der Nutzer hat am 22.11.2026 die Veröffentlichung des Entwurfs zum Testen ausdrücklich beauftragt und anschließend dauerhaft festgelegt: **Beauftragte Website-Änderungen während der Testphase nach den erforderlichen Prüfungen immer über die bestehende GitHub-Pages-Adresse bereitstellen.** GitHub Pages ist die maßgebliche Testbereitstellung; keine abweichende private Vorschau als Ersatz verwenden. Die fachliche Abnahme bleibt davon getrennt. Die vorhandene Konfiguration verwendet `main` und `/ (root)`; HTTPS ist aktiviert. Die HTML-Dateien und Assets liegen deshalb unmittelbar in der Repositorywurzel. `.nojekyll` hält die Auslieferung statisch.
 
 Testadresse: <https://4k5mm85mj2-ship-it.github.io/Webseite/>
 

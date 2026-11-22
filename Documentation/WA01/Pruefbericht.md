@@ -2,16 +2,16 @@
 
 Stand: 22. November 2026 · BRG Entwicklung – Genial einfach. Für alle.
 
-**Status: Entwicklungsversion zur Abnahme bereit.** Die technische Prüfung in Chrome ist bestanden. Die praktische Prüfung mit VoiceOver und die fachliche Abnahme stehen noch aus. Eine vollständige WCAG-Konformität oder eine erfolgreiche VoiceOver-Abnahme wird deshalb nicht behauptet.
+**Status: Testversion zur Abnahme bereit; Bereitstellung über GitHub Pages freigegeben.** Die technische Prüfung in Chrome ist bestanden. Die praktische Prüfung mit VoiceOver und die fachliche Abnahme stehen noch aus. Eine vollständige WCAG-Konformität oder eine erfolgreiche VoiceOver-Abnahme wird deshalb nicht behauptet.
 
 ## Vorschau und Ausgangsbasis
 
-- [Private Testvorschau öffnen](https://brg-wa01-ci-vorschau.streifen-chips-00.chatgpt.site/). Anmeldung mit dem eigenen ChatGPT-Konto erforderlich. Zugriff ist ausschließlich für den Eigentümer eingerichtet; keine öffentliche Freigabe.
+- [GitHub-Pages-Testseite öffnen](https://4k5mm85mj2-ship-it.github.io/Webseite/). Öffentlich erreichbar und ohne Anmeldung testbar; die vorhandene Entwurfskennzeichnung bleibt bestehen.
 - Entwicklungsbranch: `work/wa01-ci-integration` im Repository `4k5mm85mj2-ship-it/Webseite`.
 - Ausgangsstand: `a3129b499b0c6cb40f7a7ccc1be91f9de3fc6b60`.
-- Die GitHub-Pages-Webseite und deren Veröffentlichung aus `main` wurden nicht verändert. Kein Merge, keine Änderung der Pages-Einstellungen, keine kostenpflichtigen CI-Läufe und keine neuen Paketabhängigkeiten.
+- Nachtragsanweisung des Auftraggebers vom 22. November 2026: „Stell unsere Änderungen immer über GitHub Pages zur Verfügung. Das ist ja unsere Testzeit.“ Damit ist die Bereitstellung dieser Änderungen über die bestehende Testadresse aus `main` freigegeben. Die Pages-Einstellungen bleiben bestehen; keine kostenpflichtigen CI-Läufe und keine neuen Paketabhängigkeiten.
 
-Die private Vorschau enthält eine byteidentische Kopie der 16 ausgelieferten HTML-, CSS-, JavaScript- und SVG-Dateien. Sie dient ausschließlich dem Test. Die vorhandenen Rechtstexte wurden wie beauftragt unverändert übernommen; ihr Hostingbezug bleibt die bestehende GitHub-Pages-Fassung. Die Vorschau wurde erfolgreich bereitgestellt. Im nicht angemeldeten Prüf-Browser ist die erwartete Anmeldeseite sichtbar; die Funktionsprüfungen erfolgten an der identischen lokalen Fassung.
+Die zunächst erstellte private Testkopie wird für die Abnahme nicht benötigt. Maßgebliche Testadresse ist gemäß der Nachtragsanweisung GitHub Pages. Die vorhandenen Rechtstexte, KI-Hinweise und Entwurfsmarkierungen bleiben unverändert. Die nachfolgende Freigabe der Testbereitstellung ersetzt keine fachliche Abnahme und keine vollständige VoiceOver-Prüfung.
 
 ## Tatsächlich geänderte Dateien
 
@@ -23,9 +23,10 @@ Die private Vorschau enthält eine byteidentische Kopie der 16 ausgelieferten HT
 | `assets/appearance.css` | Dunkle Darstellung und Systemkontrast an die neue CI angepasst; bestehende produktspezifische Illustrationen erhalten. |
 | `assets/favicon.svg` | Originales kompaktes Symbol als SVG-Favicon mit heller/dunkler Darstellung eingebunden. |
 | `assets/logos/BRG_Logo_hell.svg`, `BRG_Logo_dunkel.svg`, `BRG_Logo_ohne_Claim_hell.svg`, `BRG_Logo_ohne_Claim_dunkel.svg`, `BRG_Symbol_hell.svg`, `BRG_Symbol_dunkel.svg` | Sechs unveränderte Originaldateien aus `BRG_Corporate_Identity_Paket.zip` hinzugefügt. |
-| `Documentation/WA01/` | Dieser Bericht, Logo-, Kontrast-, Browser- und Bestandsschutzprotokoll sowie Angaben zur separaten Testvorschau. |
+| `Documentation/WA01/` | Dieser Bericht, Logo-, Kontrast-, Browser- und Bestandsschutzprotokoll sowie Angaben zur GitHub-Pages-Testbereitstellung. |
+| `AGENTS.md`, `README.md` | Dauerhafte Festlegung: beauftragte Website-Änderungen während der Testphase nach Prüfung über die bestehende GitHub-Pages-Adresse bereitstellen. |
 
-`assets/site.js`, Seitenstruktur, Kontaktadressen, Textinhalte, sämtliche Linkziele und die bestehende Bereitstellung bleiben erhalten. Die allgemeinen Gestaltungsfarben sind ausschließlich Dunkelblau `#092744`, Mittelblau `#2477B5`, Weiß und funktionale neutrale Farben. Die bereits vorhandenen Kartenfarben und Spielillustrationen von Mitgemischt bleiben gemäß Bestandsschutz produktspezifisch erhalten.
+`assets/site.js`, Seitenstruktur, Kontaktadressen, Textinhalte, sämtliche Linkziele und die bestehende Art der Bereitstellung bleiben erhalten. Die allgemeinen Gestaltungsfarben sind ausschließlich Dunkelblau `#092744`, Mittelblau `#2477B5`, Weiß und funktionale neutrale Farben. Die bereits vorhandenen Kartenfarben und Spielillustrationen von Mitgemischt bleiben gemäß Bestandsschutz produktspezifisch erhalten.
 
 ## Logovarianten und SVG-Prüfung
 
@@ -70,4 +71,4 @@ Die Matrix nutzt ein temporäres, nicht ausgeliefertes Prüfgerüst. Die 200-Pro
 
 Echtes VoiceOver unter iOS/iPadOS/macOS und die Sprachausgabe von NVDA/JAWS waren in der Linux-Prüfumgebung nicht verfügbar. Auch echtes Safari-/Firefox-Rendering, Betriebssystem-Textvergrößerung, Browserzoom, Druck und ein realer Modus für erzwungene Systemfarben wurden nicht praktisch geprüft. Die entsprechenden vorhandenen CSS-Regeln wurden erhalten beziehungsweise angepasst.
 
-Für die praktische iPhone-Abnahme bitte in der privaten Vorschau insbesondere Logoansage und Rücknavigation, Start-/App-Navigation, Spielbeschreibungen, Kontakt sowie den Wechsel der Systemeinstellung Hell/Dunkel und größere Schrift prüfen. Erst nach dieser Rückmeldung und ausdrücklicher Veröffentlichungsfreigabe darf die Änderung nach `main` und damit auf GitHub Pages gelangen.
+Für die praktische iPhone-Abnahme bitte auf GitHub Pages insbesondere Logoansage und Rücknavigation, Start-/App-Navigation, Spielbeschreibungen, Kontakt sowie den Wechsel der Systemeinstellung Hell/Dunkel und größere Schrift prüfen. Die Testbereitstellung nach `main` und auf GitHub Pages ist durch die Nachtragsanweisung ausdrücklich freigegeben. Die endgültige fachliche Abnahme bleibt bis zur entsprechenden Rückmeldung offen.
