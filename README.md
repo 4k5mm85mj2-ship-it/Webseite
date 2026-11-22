@@ -9,7 +9,7 @@ Die Basis ist eine einspaltige Darstellung für kleine Displays. Erst ab ausreic
 ## Seiten
 
 - `index.html`: allgemeine Startseite mit Motivation, Entwicklungsprinzipien, App-Übersicht und Kontakt.
-- `apps/mitgemischt/index.html`: abgenommene Mitgemischt-Vorstellung mit vier Kartenspielen, Einstieg, Bedienungshilfen und FAQ.
+- `apps/mitgemischt/index.html`: Mitgemischt-Vorstellung mit fünf Kartenspielen einschließlich Busfahrer, Einstieg, Bedienungshilfen und FAQ.
 - `support.html`: E-Mail-Kontakt, Probleme, Ideen und Bedienungsbarrieren.
 - `impressum.html`: vorhandene Betreiberangaben; Anschriftnutzung für die Website noch zu bestätigen.
 - `datenschutz.html`: kompakte Hinweise zu Verantwortlichem, Websitebetrieb, E-Mail-/KI-Support, Dienstleistern, lokaler App-Nutzung und Betroffenenrechten.
