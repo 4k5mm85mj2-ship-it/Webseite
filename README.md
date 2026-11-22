@@ -12,7 +12,7 @@ Die Basis ist eine einspaltige Darstellung für kleine Displays. Erst ab ausreic
 - `apps/mitgemischt/index.html`: abgenommene Mitgemischt-Vorstellung mit vier Kartenspielen, Einstieg, Bedienungshilfen und FAQ.
 - `support.html`: E-Mail-Kontakt, Probleme, Ideen und Bedienungsbarrieren.
 - `impressum.html`: vorhandene Betreiberangaben; Anschriftnutzung für die Website noch zu bestätigen.
-- `datenschutz.html`: klar gekennzeichneter Entwurf mit korrektem Hostinghinweis für die GitHub-Pages-Testfassung und offenen Angaben zu E-Mail und endgültiger Veröffentlichung.
+- `datenschutz.html`: kompakte Hinweise zu Verantwortlichem, Websitebetrieb, E-Mail-/KI-Support, Dienstleistern, lokaler App-Nutzung und Betroffenenrechten.
 
 Die Hauptnavigation lautet **Start · Apps · Kontakt**. Produkt und Hilfe haben eine ergänzende Navigation für Mitgemischt. Die bisherige Adresse `support.html` bleibt erreichbar.
 
@@ -45,10 +45,12 @@ Standardadresse: `http://127.0.0.1:3000/`. Es ist kein `npm install` erforderlic
 - Die bisherige Mitgemischt-Gestaltung und -Bedienung wurde am 22.11.2026 vom Nutzer praktisch abgenommen. Neue Startseite, Navigation, KI-Hinweis und automatischer Hell-/Dunkelwechsel sind anschließend auf dem iPhone zu prüfen.
 - App-Store-Link und Verfügbarkeit anhand der tatsächlich veröffentlichten App verifizieren und erst dann ergänzen.
 - Nutzung der Postflex-Anschrift für die Website bestätigen.
-- Datenschutzhinweise vervollständigen, insbesondere Gmail, Rechtsgrundlagen und Aufbewahrung.
+- Datenschutzhinweise mit den konkret geltenden Anbietervereinbarungen und der tatsächlichen Aufbewahrungs- und Löschpraxis abgleichen.
 - Angaben zur tatsächlich veröffentlichten App-Version abgleichen.
 - Erst bei abgeschlossener Abnahme die Entwurfsmarkierung und gegebenenfalls `noindex` entfernen.
 
 Der Website-Entwurf ändert weder die App noch deren bisherige Supportadressen oder Store-Metadaten.
 
 Prüfumfang und Quellen stehen in [VALIDIERUNG.md](VALIDIERUNG.md).
+
+Der Nachtrag vom 22.11.2026 ergänzt das vollständige Logo im mobilen Startbereich und die vom Auftraggeber bereitgestellte Mitgemischt-Illustration; die Datenschutzhinweise wurden gekürzt. Details und Prüfungen: [Nachtrag zu WA01](Documentation/WA01/Nachtrag/README.md).
