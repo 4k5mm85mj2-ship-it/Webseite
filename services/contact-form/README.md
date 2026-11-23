@@ -1,6 +1,6 @@
 # BRG-Kontaktformular – separater Versanddienst
 
-Vorbereitet am 23. November 2026. Noch nicht in Google bereitgestellt. Der Versand auf der Website bleibt deaktiviert, bis eine echte Bereitstellung und die Zustellung ins BRG-Postfach geprüft wurden. Keine Änderung am bestehenden Apps-Script-Supportprojekt, an dessen Triggern oder an der automatischen Eingangsbestätigung.
+Bereitgestellt und Versand geprüft am 23. November 2026. Eigenständige Web-App im BRG-Konto; Ausführung als Eigentümer, Zugriff ohne Google-Anmeldung. Google-Dialog bestätigte ausschließlich script.send_mail. Keine Änderung am bestehenden Apps-Script-Supportprojekt, an dessen Triggern oder an der automatischen Eingangsbestätigung.
 
 ## Bereitstellung nach Freigabe des Google-Zugriffs
 
@@ -23,8 +23,13 @@ Vorbereitet am 23. November 2026. Noch nicht in Google bereitgestellt. Der Versa
 
 `node --test services/contact-form/contact-form.test.cjs`: fünf Tests bestanden (nur lokale Mocks). Gültiger Versand, fester Empfänger, Reply-To, Replay, geänderte Inhalte bei gleicher Kennung, mehrdeutiger Fehler ohne Wiederholung, ungültige Felder/Header-Injection/Honeypot/Längen, Quote und Adresslimit. `node --check assets/contact-form.js` und `git diff --check` erfolgreich.
 
-16 Browserkombinationen: Rahmenbreite 320/390/768/1440, Schrift 100/200 Prozent, hell/dunkel. Kein horizontaler Dokumentüberlauf, Eingaben innerhalb des Bildschirms, Versandbutton korrekt deaktiviert. Ungültiges E-Mail-Format wird nativ erkannt. Beschriftungen, Pflichtfelder und Einrichtungsstatus im Accessibility-Baum vorhanden. Kein praktischer VoiceOver-Test und noch kein echter Nachrichteneingang geprüft.
+16 Browserkombinationen: Rahmenbreite 320/390/768/1440, Schrift 100/200 Prozent, hell/dunkel. Kein horizontaler Dokumentüberlauf, Eingaben innerhalb des Bildschirms, Versandbutton korrekt deaktiviert. Ungültiges E-Mail-Format wird nativ erkannt. Beschriftungen, Pflichtfelder und Einrichtungsstatus im Accessibility-Baum vorhanden. Kein praktischer VoiceOver-Test. Echte Übermittlung über das native Formular erfolgreich: Bestätigungsseite nach Versand, Gmail-Eingang am 23.11.2026 um 16:57 Uhr (Europe/Berlin), Nachricht 1a2091ffb2b8d110. Fester Empfänger und Reply-To brg.entwicklung@gmail.com, Inhalt vollständig.
 
 Kontraste: Text hell 12,20:1; Eingaberahmen hell 5,81:1; Text dunkel 14,26:1; Eingaberahmen dunkel 10,15:1; weiße Schrift auf Mittelblau 4,79:1.
 
-Der Browserzugriff auf script.google.com wurde durch die automatische Sicherheitsprüfung abgelehnt, weil die zusätzliche Origin-Freigabe fehlte. Kein Umgehungsversuch. Die Bereitstellung ist deshalb offen.
+Die anfängliche Zugriffssperre wurde nach ausdrücklicher Origin- und Berechtigungsfreigabe regulär aufgelöst.
+
+Projekt: BRG Website-Kontaktformular, Script-ID 1Nif_k6aX2ecutdn2i9MuysAVyAYLyMCAtX0Ia_KH1NoiDGt59qepp7Qv.
+Deployment Version 1: AKfycbykPqbm77e9PSlT4xqNaW574HSzVzBRyfw8VPppIv8Kb0cc0wfp0hN1sD4RdRpqCzNgmQ. Öffentliche /exec-Adresse in assets/contact-form.js. Keine Änderung an Webseite-produktiv oder Domainkonfiguration.
+
+Bei Änderungen an assets/contact-form.js dessen SHA-256-Kurzversion im Script-src von support.html aktualisieren, anschließend scripts/version-styles.mjs ausführen.

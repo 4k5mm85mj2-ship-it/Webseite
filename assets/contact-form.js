@@ -1,7 +1,7 @@
-/* Empty until the separate Apps Script deployment and real delivery are verified. */
+/* Separate Apps Script endpoint; native POST with server-side confirmation. */
 'use strict';
 (() => {
-  const endpoint = '';
+  const endpoint = 'https://script.google.com/macros/s/AKfycbykPqbm77e9PSlT4xqNaW574HSzVzBRyfw8VPppIv8Kb0cc0wfp0hN1sD4RdRpqCzNgmQ/exec';
   const form = document.querySelector('#contact-form');
   if (!form) return;
   const button = form.querySelector('button[type="submit"]');
