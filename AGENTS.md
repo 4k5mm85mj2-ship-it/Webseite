@@ -10,7 +10,7 @@ https://4k5mm85mj2-ship-it.github.io/Webseite/
 
 Die vorhandene Konfiguration veröffentlicht `main` aus der Repositorywurzel. Diese Testbereitstellung ist autorisiert und benötigt keine erneute gesonderte Veröffentlichungsfreigabe. Sie ersetzt keine fachliche Abnahme. Eine private Vorschau auf einem anderen Dienst ist kein Ersatz für GitHub Pages.
 
-Nach CSS-Änderungen vor Prüfung und Bereitstellung `node scripts/version-styles.mjs` ausführen. Das Skript aktualisiert die Inhaltsversionen der Stylesheet-Adressen und der internen Seitennavigation auf allen fünf Seiten, damit neue HTML-Inhalte nicht mit älteren Styles aus dem Browser-Cache kombiniert werden. Bildgrenzen auch innerhalb von Grid-Containern prüfen; `overflow: hidden` allein ist kein Nachweis für korrektes Reflow.
+Nach jeder Änderung an HTML oder CSS vor Prüfung und Bereitstellung `node scripts/version-styles.mjs` ausführen. Das Skript aktualisiert die Inhaltsversionen der Stylesheet-Adressen und der internen Seitennavigation auf allen fünf Seiten, damit neue HTML-Inhalte nicht mit älteren Styles aus dem Browser-Cache kombiniert werden. Bildgrenzen auch innerhalb von Grid-Containern prüfen; `overflow: hidden` allein ist kein Nachweis für korrektes Reflow.
 
 Die Website bindet die unveränderte Geometrie der Original-Logos als Inline-SVG ein. Dadurch greift Safaris bildbezogene Farbumkehr nicht separat auf das Logo zu. Bei freigegebenen Änderungen an den SVG-Originalen zuerst `node scripts/sync-brand-logos.mjs`, danach `node scripts/version-styles.mjs` ausführen. Nicht die generierten Kopien in den HTML-Seiten einzeln bearbeiten. Alle sechs Varianten, ihre responsiven Grenzen und beide Erscheinungsbilder prüfen.
 
