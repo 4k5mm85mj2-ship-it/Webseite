@@ -37,3 +37,20 @@ Bei Änderungen an assets/contact-form.js dessen SHA-256-Kurzversion im Script-s
 ## Rücklinkkorrektur am 23. November 2026
 
 Der Rücklink der gemeinsamen Google-Ergebnisansicht führt nun auf https://www.brg-entwicklung.de/support.html#kontaktformular. Dies gilt für Aufrufe von Produktiv- und Testseite. Versandempfänger, Schutzmechanismen und Berechtigungen bleiben unverändert.
+
+
+## Allgemeine Hilfe und App-Auswahl – Entwicklungsstand vom 24. November 2026
+
+Die Entwicklungsseite verwendet eine eigene Web-App-Bereitstellung der Version 3:
+https://script.google.com/macros/s/AKfycbzcwVhKNEY3iYJYehuetwCHtBejFpe33ZONP5bqX4pK2rqh1tvcBl5IsrA7Q7Rl6Q3wpA/exec
+
+Die bisherige produktive Bereitstellung AKfycbykPqbm77e9PSlT4xqNaW574HSzVzBRyfw8VPppIv8Kb0cc0wfp0hN1sD4RdRpqCzNgmQ bleibt auf Version 2. Keine Änderung am produktiven Repository, an OAuth-Berechtigungen, Triggern oder automatischen Eingangsbestätigungen. Beide Bereitstellungen teilen weiterhin die bestehenden Quoten und den Schutz vor Doppelversand.
+
+Neue Formulare senden eine serverseitig erlaubte App-Kennung: general, mitgemischt, barborant oder sovira. Betreff: Website-Kontakt – App-Name – Versandkennung; Auswahl auch im Nachrichtentext. Vorauswahl Allgemein. Fehlendes Feld erhält das bisherige Betreffformat, sodass ältere Formulare kompatibel bleiben. Unbekannte/manipulierte Auswahlwerte werden abgewiesen. App-Wechsel bei gleicher Versandkennung wird als Inhaltsänderung erkannt.
+
+Acht lokale Node-Tests mit Mocks bestanden: bestehender Versand, feste Zieladresse, Reply-To, Replay, Fehler, Validierung, Quoten; zusätzlich alle vier App-Betreffvarianten, Legacy-Formulare und App-Wechsel mit gleicher Versandkennung. Native HTML-select mit sichtbarem Label und Erklärung, dieselben kontrastgeprüften Variablen wie die bestehenden Eingabefelder. Praktischer VoiceOver-Test dieser Erweiterung steht aus.
+
+Die allgemeine Hilfe enthält keine App-spezifischen Anleitungen. Die bisherige Anleitung zur lokalen Verbindung bleibt bei Mitgemischt in der Frage zur Internetverbindung erhalten. Alle Hilfe-Links auf den sechs Webseiten heißen Hilfe. Bestehende Anker kontaktformular und barriere-melden bleiben gültig.
+
+Vor produktiver Übernahme den Rücklink in CONTACT.back für eine eigene freigegebene Produktivversion anpassen und das dortige Formular gezielt gegen deren Endpunkt prüfen. Den Test-Endpunkt nicht ungeprüft auf die produktive Webseite übertragen.
+

@@ -1,7 +1,7 @@
 /* Separate Apps Script endpoint; native POST with server-side confirmation. */
 'use strict';
 (() => {
-  const endpoint = 'https://script.google.com/macros/s/AKfycbykPqbm77e9PSlT4xqNaW574HSzVzBRyfw8VPppIv8Kb0cc0wfp0hN1sD4RdRpqCzNgmQ/exec';
+  const endpoint = 'https://script.google.com/macros/s/AKfycbzcwVhKNEY3iYJYehuetwCHtBejFpe33ZONP5bqX4pK2rqh1tvcBl5IsrA7Q7Rl6Q3wpA/exec';
   const form = document.querySelector('#contact-form');
   if (!form) return;
   const button = form.querySelector('button[type="submit"]');
@@ -23,3 +23,4 @@
   });
   window.addEventListener('pageshow', () => { button.disabled = false; });
 })();
+
