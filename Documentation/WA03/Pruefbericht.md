@@ -33,10 +33,18 @@ Die Übertragung läuft weiterhin als native HTTPS-POST-Navigation. Keine neue S
 ## Bestandsschutz und Produktionstrennung
 Keine Repository-Workflows für Übertragungen zur Produktion vorhanden; bestehende Veröffentlichungen sind GitHub-eigene pages build and deployment, repositorybezogen. Dev enthält keinen CNAME für die Produktivdomain. Ausschließlich native GitHub-Schreiboperationen mit repository_full_name=4k5mm85mj2-ship-it/Webseite. Webseite-produktiv nur lesend als Referenz geprüft. Keine Domain-/DNS-/HTTPS-Änderung.
 
-Mitgemischt-Inhalte, alle fünf Spiele, TestFlight-Adresse, Motivation und Impressumsinhalt durch normalisierten Dateivergleich unverändert. Beide bisherigen Farbstyles und Code.gs bytegleich. Homepage-Mitgemischt-Artikel unverändert. Nachweise in preservation-audit.json. Produktivcommit muss nach Testbereitstellung nochmals unverändert bestätigt werden.
+Mitgemischt-Inhalte, alle fünf Spiele, TestFlight-Adresse, Motivation und Impressumsinhalt durch normalisierten Dateivergleich unverändert. Beide bisherigen Farbstyles und Code.gs bytegleich. Homepage-Mitgemischt-Artikel unverändert. Nachweise in preservation-audit.json. Produktivcommit nach erfolgreicher Testbereitstellung nochmals lesend geprüft und identisch bestätigt: 358926b65fada1e029743adec1a48b733da3eff3.
 
 ## Grenzen / praktische Abnahme
 Kein tatsächlicher VoiceOver-/NVDA-/JAWS-Test dieser Erweiterung verfügbar; keine pauschale WCAG-Konformitätszertifizierung. Praktische Abnahme auf dem iPhone bleibt erforderlich. Kein echter Mailversand, kein Test öffentlicher Dokumaro-Versionen und keine Veröffentlichung der App. Kein zusätzlicher kostenpflichtiger Dienst, Build oder Hostingvertrag. GitHub Pages bleibt die einzige bereitgestellte Testumgebung. Keine produktive Freigabe oder Synchronisierung.
 
 Entwicklungsziel: https://4k5mm85mj2-ship-it.github.io/Webseite/apps/dokumaro/ .
 
+
+## GitHub-Pages-Abschluss
+
+Implementierungscommit: 50f517c83f88cdacf8e5c01526d99c2d63fcc685. GitHub-Pages-Lauf 45836317573 erfolgreich (success). Live-Seitenversion 76da650eb6b7. Im Browser bestätigt: Dokumaro-Produktseite, acht Funktionskarten, geladenes originales 1024-Pixel-App-Icon und geladene 1200-Pixel-Illustration; keine Store-/TestFlight-Verweise. App-Übersicht in Reihenfolge Mitgemischt, Dokumaro. Hilfe über bestehende Navigation erreichbar; Dokumaro auswählbar, 4.985-Zeichen-Limit aktiv. Keine echte Formularnachricht gesendet.
+
+Direkte Abnahme: https://4k5mm85mj2-ship-it.github.io/Webseite/apps/dokumaro/?v=76da650eb6b7
+
+Keine weiteren Änderungen nach Bereitstellung vorgesehen. Praktische VoiceOver-Abnahme und gegebenenfalls echter Testversand bleiben offen; keine produktive Freigabe.
