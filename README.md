@@ -1,6 +1,6 @@
 # BRG Entwicklung · Website
 
-Statischer Website-Entwurf für **BRG Entwicklung – Genial einfach. Für alle.** Die App-Übersicht enthält zunächst ausschließlich Mitgemischt.
+Statischer Website-Entwurf für **BRG Entwicklung – Genial einfach. Für alle.** Die App-Übersicht enthält Mitgemischt und Dokumaro.
 
 ## Mobile First
 
@@ -8,13 +8,15 @@ Die Basis ist eine einspaltige Darstellung für kleine Displays. Erst ab ausreic
 
 ## Seiten
 
-- `index.html`: allgemeine Startseite mit Motivation, Entwicklungsprinzipien, App-Übersicht und Kontakt.
+- `index.html`: allgemeine Startseite mit Entwicklungsprinzipien, App-Übersicht und Kontakt.
 - `apps/mitgemischt/index.html`: Mitgemischt-Vorstellung mit fünf Kartenspielen einschließlich Busfahrer, Einstieg, Bedienungshilfen und FAQ.
+- `apps/dokumaro/index.html`: Dokumaro mit acht Funktionsbereichen und Entwicklungsstatus.
+- `motivation.html`: separate Motivation mit Erläuterungen zur digitalen Barrierefreiheit.
 - `support.html`: E-Mail-Kontakt, Probleme, Ideen und Bedienungsbarrieren.
-- `impressum.html`: vorhandene Betreiberangaben; Anschriftnutzung für die Website noch zu bestätigen.
+- `impressum.html`: vorhandene Betreiberangaben; Impressumsanschrift abgenommen.
 - `datenschutz.html`: kompakte Hinweise zu Verantwortlichem, Websitebetrieb, E-Mail-/KI-Support, Dienstleistern, lokaler App-Nutzung und Betroffenenrechten.
 
-Die Hauptnavigation lautet **Start · Apps · Kontakt**. Produkt und Hilfe haben eine ergänzende Navigation für Mitgemischt. Die bisherige Adresse `support.html` bleibt erreichbar.
+Die Hauptnavigation lautet **Start · Motivation · Apps · Kontakt**. Die Produktseiten haben eine ergänzende lokale Navigation. Die Hilfe bleibt allgemein. Die bisherige Adresse `support.html` bleibt erreichbar.
 
 Das Erscheinungsbild folgt mit `prefers-color-scheme` automatisch der Systemeinstellung. Die freigegebene helle Palette bleibt in `assets/styles.css`; `assets/appearance.css` ergänzt die dunkle Darstellung. Es gibt keinen zusätzlichen Theme-Umschalter und keine gespeicherte Darstellungspräferenz.
 
@@ -44,7 +46,7 @@ Standardadresse: `http://127.0.0.1:3000/`. Es ist kein `npm install` erforderlic
 
 - Die bisherige Mitgemischt-Gestaltung und -Bedienung wurde am 22.11.2026 vom Nutzer praktisch abgenommen. Neue Startseite, Navigation, KI-Hinweis und automatischer Hell-/Dunkelwechsel sind anschließend auf dem iPhone zu prüfen.
 - App-Store-Link und Verfügbarkeit anhand der tatsächlich veröffentlichten App verifizieren und erst dann ergänzen.
-- Nutzung der Postflex-Anschrift für die Website bestätigen.
+- Bestätigte Impressumsanschrift beibehalten.
 - Datenschutzhinweise mit den konkret geltenden Anbietervereinbarungen und der tatsächlichen Aufbewahrungs- und Löschpraxis abgleichen.
 - Angaben zur tatsächlich veröffentlichten App-Version abgleichen.
 - Erst bei abgeschlossener Abnahme die Entwurfsmarkierung und gegebenenfalls `noindex` entfernen.
@@ -54,3 +56,7 @@ Der Website-Entwurf ändert weder die App noch deren bisherige Supportadressen o
 Prüfumfang und Quellen stehen in [VALIDIERUNG.md](VALIDIERUNG.md).
 
 Der Nachtrag vom 22.11.2026 ergänzt das vollständige Logo im mobilen Startbereich und die vom Auftraggeber bereitgestellte Mitgemischt-Illustration; die Datenschutzhinweise wurden gekürzt. Details und Prüfungen: [Nachtrag zu WA01](Documentation/WA01/Nachtrag/README.md).
+
+## WA03 – ausschließlich Entwicklung
+
+Dokumaro wurde auf Grundlage des read-only geprüften App-Branches work/wa01-initial-development (63d9422df752d367d76faba84570ad8f63932661) ergänzt. Keine Änderungen am App-Repository, Produktivrepository, DNS oder Google-Skripten. Der neue Kontaktwert wird vor der nativen Übermittlung ausschließlich im Browser als „App: Dokumaro“ in den Nachrichtentext übernommen; für diesen Fall wird das bisher kompatible Nachrichtenformat ohne app-Parameter verwendet. Allgemein und Mitgemischt bleiben unverändert. Empfänger, Endpunkt und Supportautomatisierung bleiben erhalten. Details: Documentation/WA03/Pruefbericht.md.

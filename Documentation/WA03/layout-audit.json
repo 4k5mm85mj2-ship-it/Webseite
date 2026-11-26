@@ -1,0 +1,27 @@
+{
+  "method": "Chromium, same source HTML in local frames; details open; inline styles identical except deterministic selection of light/dark media rules; root text 16/32px confirmed",
+  "sizes": [
+    320,
+    390,
+    768,
+    1280
+  ],
+  "text_percent": [
+    100,
+    200
+  ],
+  "schemes": [
+    "light",
+    "dark"
+  ],
+  "pages": [
+    "index.html",
+    "apps/dokumaro/index.html",
+    "support.html"
+  ],
+  "cases": 48,
+  "horizontal_document_overflow": 0,
+  "elements_outside_viewport": 0,
+  "practical_VoiceOver": "not available; pending user acceptance",
+  "real_OS_theme_toggle": "not performed; CSS scheme variants rendered"
+}

@@ -6,6 +6,26 @@
   if (!form) return;
   const button = form.querySelector('button[type="submit"]');
   const status = document.querySelector('#contact-form-status');
+  const app = form.querySelector('[name="app"]');
+  const message = form.querySelector('[name="message"]');
+  const messageHint = document.querySelector('#contact-message-hint');
+  const dokumaroPrefix = 'App: Dokumaro\n\n';
+  // Existing deployed service accepts legacy messages without an app field.
+  // Identify Dokumaro in the message; never alter the shared Google script.
+  function updateMessageLimit() {
+    message.maxLength = app.value === 'dokumaro' ? 5000 - dokumaroPrefix.length : 5000;
+    messageHint.textContent = 'Bis zu ' + message.maxLength.toLocaleString('de-DE') + ' Zeichen. Bitte keine Passwörter oder Zugangscodes senden.';
+    message.setCustomValidity(message.value.length > message.maxLength ? 'Bitte kürze deine Nachricht auf höchstens ' + message.maxLength + ' Zeichen.' : '');
+  }
+  app.addEventListener('change', updateMessageLimit);
+  message.addEventListener('input', updateMessageLimit);
+  form.addEventListener('formdata', event => {
+    if (event.formData.get('app') === 'dokumaro') {
+      event.formData.delete('app');
+      event.formData.set('message', dokumaroPrefix + event.formData.get('message'));
+    }
+  });
+  updateMessageLimit();
   const requestId = form.querySelector('[name="requestId"]');
   if (!/^https:\/\/script\.google\.com\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(endpoint) || !window.crypto?.randomUUID) return;
   requestId.value = crypto.randomUUID();
@@ -21,6 +41,6 @@
     button.disabled = true;
     status.textContent = 'Deine Nachricht wird übermittelt. Bitte warte auf die Bestätigung.';
   });
-  window.addEventListener('pageshow', () => { button.disabled = false; });
+  window.addEventListener('pageshow', () => { updateMessageLimit(); button.disabled = false; });
 })();
 
