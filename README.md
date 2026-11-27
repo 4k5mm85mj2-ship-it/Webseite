@@ -10,7 +10,7 @@ Die Basis ist eine einspaltige Darstellung für kleine Displays. Erst ab ausreic
 
 - `index.html`: allgemeine Startseite mit Entwicklungsprinzipien, App-Übersicht und Kontakt.
 - `apps/mitgemischt/index.html`: Mitgemischt-Vorstellung mit fünf Kartenspielen einschließlich Busfahrer, Einstieg, Bedienungshilfen und FAQ.
-- `apps/dokumaro/index.html`: Dokumaro mit acht Funktionsbereichen und Entwicklungsstatus.
+- `apps/dokumaro/index.html`: Dokumaro mit zehn illustrierten Funktionsbereichen im vorbereiteten Veröffentlichungswortlaut.
 - `motivation.html`: separate Motivation mit Erläuterungen zur digitalen Barrierefreiheit.
 - `support.html`: E-Mail-Kontakt, Probleme, Ideen und Bedienungsbarrieren.
 - `impressum.html`: vorhandene Betreiberangaben; Impressumsanschrift abgenommen.
@@ -60,3 +60,9 @@ Der Nachtrag vom 22.11.2026 ergänzt das vollständige Logo im mobilen Startbere
 ## WA03 – ausschließlich Entwicklung
 
 Dokumaro wurde auf Grundlage des read-only geprüften App-Branches work/wa01-initial-development (63d9422df752d367d76faba84570ad8f63932661) ergänzt. Keine Änderungen am App-Repository, Produktivrepository, DNS oder Google-Skripten. Der neue Kontaktwert wird vor der nativen Übermittlung ausschließlich im Browser als „App: Dokumaro“ in den Nachrichtentext übernommen; für diesen Fall wird das bisher kompatible Nachrichtenformat ohne app-Parameter verwendet. Allgemein und Mitgemischt bleiben unverändert. Empfänger, Endpunkt und Supportautomatisierung bleiben erhalten. Details: Documentation/WA03/Pruefbericht.md.
+
+## WA03 – vorbereiteter Produktauftritt vom 27. November 2026
+
+Der Dokumaro-Bereich verwendet auf ausdrücklichen Auftrag die Texte für den angestrebten fertigen Veröffentlichungsstand, ohne Entwicklungshinweise innerhalb der Produktdarstellung. Dies gilt ausschließlich für diese Entwicklungswebseite. Die globale Vorschaukennzeichnung und noindex-Metadaten bleiben bestehen. Vor einer späteren, separat freizugebenden produktiven Übernahme müssen alle Funktionsbeschreibungen gegen den tatsächlich abgenommenen App-Stand geprüft werden. Keine Downloadverfügbarkeit, keine öffentlichen Testlinks und keine Termine für Dokumaro.
+
+Keine Änderungen an Kontaktformular-Logik, Google-Skripten, Mitgemischt, Motivation oder Rechtsinhalten. Prüfbericht: [WA03-Nachtrag](Documentation/WA03/Nachtrag-Produktauftritt-2026-11-27.md).
