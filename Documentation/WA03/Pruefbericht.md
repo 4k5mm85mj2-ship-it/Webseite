@@ -1,4 +1,6 @@
 # WORK-AUFTRAG 03 – Dokumaro auf der Entwicklungswebseite
+> Historischer Prüfstand der ersten Integration. Maßgeblich für den abgeschlossenen Gesamtumfang einschließlich der späteren Nachträge ist der [Abschlussbericht vom 28. November 2026](Abschlussbericht-2026-11-28.md).
+
 Stand: 26. November 2026. Ausschließlich 4k5mm85mj2-ship-it/Webseite.
 Ausgangscommit Webseite: 152b9116546810ed27495c34dc7586ddbb61fe07.
 Produktivcommit vor Beginn und nach lokaler Prüfung: 358926b65fada1e029743adec1a48b733da3eff3.

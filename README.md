@@ -10,7 +10,7 @@ Die Basis ist eine einspaltige Darstellung für kleine Displays. Erst ab ausreic
 
 - `index.html`: allgemeine Startseite mit Entwicklungsprinzipien, App-Übersicht und Kontakt.
 - `apps/mitgemischt/index.html`: Mitgemischt-Vorstellung mit fünf Kartenspielen einschließlich Busfahrer, Einstieg, Bedienungshilfen und FAQ.
-- `apps/dokumaro/index.html`: Dokumaro mit zehn illustrierten Funktionsbereichen im vorbereiteten Veröffentlichungswortlaut.
+- `apps/dokumaro/index.html`: Dokumaro mit neun illustrierten Funktionsbereichen im vorbereiteten Veröffentlichungswortlaut; Speicherformate, Sprache und Scanoptionen sind unter „So individuell wie du“ gebündelt.
 - `motivation.html`: separate Motivation mit Erläuterungen zur digitalen Barrierefreiheit.
 - `support.html`: E-Mail-Kontakt, Probleme, Ideen und Bedienungsbarrieren.
 - `impressum.html`: vorhandene Betreiberangaben; Impressumsanschrift abgenommen.
@@ -66,3 +66,11 @@ Dokumaro wurde auf Grundlage des read-only geprüften App-Branches work/wa01-ini
 Der Dokumaro-Bereich verwendet auf ausdrücklichen Auftrag die Texte für den angestrebten fertigen Veröffentlichungsstand, ohne Entwicklungshinweise innerhalb der Produktdarstellung. Dies gilt ausschließlich für diese Entwicklungswebseite. Die globale Vorschaukennzeichnung und noindex-Metadaten bleiben bestehen. Vor einer späteren, separat freizugebenden produktiven Übernahme müssen alle Funktionsbeschreibungen gegen den tatsächlich abgenommenen App-Stand geprüft werden. Keine Downloadverfügbarkeit, keine öffentlichen Testlinks und keine Termine für Dokumaro.
 
 Keine Änderungen an Kontaktformular-Logik, Google-Skripten, Mitgemischt, Motivation oder Rechtsinhalten. Prüfbericht: [WA03-Nachtrag](Documentation/WA03/Nachtrag-Produktauftritt-2026-11-27.md).
+
+## WA03 – Abschluss am 28. November 2026
+
+Der Entwicklungsauftrag ist auf ausdrücklichen Abschlussauftrag des Auftraggebers abgeschlossen. Dokumaro ist mit Produktillustration, eigenständiger Produktseite und Hilfe-/Kontaktintegration auf GitHub Pages bereitgestellt. Die im Repository bestehende Reihenfolge Dokumaro, Mitgemischt und die Bündelung der Einstellungen unter „So individuell wie du“ bleiben erhalten.
+
+Abschlussprüfungen: 13 Formularprüfungen, 16 Layoutvarianten des aktuellen Dokumaro-Bereichs, Tastaturbedienung, Browser-Zugänglichkeitsbaum und vorhandene Kontrastkombinationen. Ein praktischer VoiceOver-/JAWS-/NVDA-Test ist nicht nachgewiesen; es wird keine vollständige WCAG-Konformität bescheinigt. Keine Produktivfreigabe, Synchronisierung, Änderung an iOS oder Supportdiensten.
+
+Details, Einschränkungen und Nachweise: [WA03-Abschlussbericht](Documentation/WA03/Abschlussbericht-2026-11-28.md).
