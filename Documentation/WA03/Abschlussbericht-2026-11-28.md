@@ -48,9 +48,24 @@ Die Produkttexte dienen weiterhin ausdrücklich der Vorbereitung des angestrebte
 
 ## Bereitstellung
 
-Abschließende Seitenversion: `6844cbbf6933`.
+Abschließende Seitenversion: `480ddf9b5db8`.
 
-- Entwicklungsseite: https://4k5mm85mj2-ship-it.github.io/Webseite/?v=6844cbbf6933
-- Dokumaro: https://4k5mm85mj2-ship-it.github.io/Webseite/apps/dokumaro/?v=6844cbbf6933
+- Entwicklungsseite: https://4k5mm85mj2-ship-it.github.io/Webseite/?v=480ddf9b5db8
+- Dokumaro: https://4k5mm85mj2-ship-it.github.io/Webseite/apps/dokumaro/?v=480ddf9b5db8
 
 Geänderte Dateien bei diesem Abschluss: `README.md`, dieser Abschlussbericht, der Verweis im ursprünglichen `Pruefbericht.md` und ausschließlich Cache-Versionen in den sieben HTML-Dateien. Keine zusätzliche Funktion, Illustration oder Umgestaltung.
+
+
+## Nachkorrektur: neueste Einstellungsillustration
+
+Am 28. November 2026 wies der Auftraggeber darauf hin, dass das zuletzt erstellte Bild noch fehlte. Die Abschlussprüfung hatte die vorhandene Einbindung bestätigt, dabei aber nicht erkannt, dass unter „So individuell wie du“ weiterhin die frühere Sprachillustration `languages.webp` verwendet wurde. Der dokumentierte Abschluss deckte diese neue Grafik daher nicht ab.
+
+Korrigiert auf Grundlage von Entwicklungscommit `385811f8491edce15d0daf3fc42facf8b6765439`: Die vorhandene Bildstelle unter „So individuell wie du“ verwendet nun `assets/dokumaro/einstellungen.webp`. Quelle: bereitgestellte Datei „dokumaro-einstellungen.webp“, erstellt am 28. November 2026; 1199 × 1312 Pixel, 162.578 Byte. Datei unverändert übernommen, Git-Blob `1e872a39c92c3ab1afe44444027717ab1e61f4d5`. Keine neue Bildgenerierung oder Bearbeitung des Motivs. Die bisherige Sprachgrafik bleibt im Repository erhalten.
+
+Die bestehenden Styles skalieren das vollständige Motiv ohne Beschneidung (`object-fit:contain`). Leerer Alternativtext und `aria-hidden` des dekorativen Bildbereichs bleiben erhalten; die Produktinformationen stehen weiterhin im Begleittext. Keine zusätzlichen Fokusstopps. Bildgröße als intrinsische Maße korrigiert; Lazy Loading und asynchrones Decodieren bleiben aktiv.
+
+Gezielte Nachprüfung: 16 Browser-Layoutfälle (320/390/768/1280 CSS-Pixel × 100/200 % Schrift × hell/dunkel) ohne Überlauf oder außerhalb der Seitenbreite liegende sichtbare Inhalte. Passende Farbdarstellung, `object-fit:contain` und dekorative Kennzeichnung in allen Fällen bestätigt. Die exakte WebP-Datei wurde in der mobilen Vorschau mit 1199 × 1312 Pixeln geladen und visuell vollständig dargestellt. Mit Enter lässt sich die Beschreibung weiterhin öffnen; Fokus auf Summary mit sichtbarer 3-Pixel-Markierung. Kein praktischer VoiceOver-Test behauptet.
+
+Quellvergleich: Auf der Dokumaro-Seite ausschließlich Bildadresse und intrinsische Bildmaße geändert; sämtliche Texte, übrige Illustrationen und Funktionen unverändert. Die übrigen sechs HTML-Seiten ändern nur Cache-Versionen. Keine CSS-/JavaScript-/Formularänderung. Keine zusätzliche vollständige Regression oder erneuter Testversand erforderlich.
+
+Produktivrepository nur lesend geprüft: weiterhin `358926b65fada1e029743adec1a48b733da3eff3`. Bereitstellung ausschließlich auf der Entwicklungswebseite mit Seitenversion `480ddf9b5db8`; erneute Live-Kontrolle nach erfolgreichem GitHub-Pages-Lauf. Keine Übernahme in Produktion.
